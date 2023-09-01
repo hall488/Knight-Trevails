@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+    border: 10px solid rgb(44, 44, 44);
+}
+
+.board.mobile {
+    grid-template-columns: repeat(8, 35px);
+    grid-template-rows: repeat(8, 35px);
+    border: 4px solid rgb(44, 44, 44);
+}
+
+.fa-chess-knight {
+    font-size: 70px;
+    color: rgb(44, 44, 44);
+}
+
+.mobile > div > .fa-chess-knight {
+    font-size: 30px;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 173, 1);
+}
+
+.odd:nth-child(odd) {
+    background-color: lightgreen;
+}
+
+.even:nth-child(even) {
+    background-color: lightgreen;
+}
+
+.square:hover {
+    background-color: lightgrey;
+}
